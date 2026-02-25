@@ -1,4 +1,4 @@
-![](https://github.com/MaazU-Dev/cicd/actions/workflows/ci.yml/badge.svg)
+![Test Status Badge](https://github.com/MaazU-Dev/cicd/actions/workflows/ci.yml/badge.svg)
 
 # learn-cicd-starter (Notely)
 
