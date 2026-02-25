@@ -1,4 +1,4 @@
-![alt text goes here](https://github.com/MaazU-Dev/cicd/actions/workflows/ci/badge.svg)
+![Test Status Badge](https://github.com/MaazU-Dev/cicd/actions/workflows/ci.yml/badge.svg)
 
 # learn-cicd-starter (Notely)
 
