@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Clear Port 8080",
+            "type": "shell",
+            // When you define an alias like kp in your .zshrc, it's loaded when you physically 
+            // open a terminal tab and look at it. However, when VS Code runs a task, 
+            // it doesn't always "source" (read) your .zshrc file, so it has no idea what kp is.
+            // "command": "kp 8080",
+            "command": "lsof -ti :8080 | xargs kill -9 || true",
+            "problemMatcher": []
+        }
+    ]
+}
