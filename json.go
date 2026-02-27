@@ -30,11 +30,10 @@ func respondWithJSON(w http.ResponseWriter, code int, payload interface{}) {
 		w.WriteHeader(500)
 		return
 	}
+	w.WriteHeader(code)
 	_, err = w.Write(dat) // #nosec G705 -- response is JSON-encoded with proper Content-Type
 	if err != nil {
 		log.Printf("Error writing JSON: %s", err)
-		w.WriteHeader(500)
 		return
 	}
-	w.WriteHeader(code)
 }
